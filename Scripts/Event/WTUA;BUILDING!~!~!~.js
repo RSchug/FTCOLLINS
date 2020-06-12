@@ -1130,7 +1130,7 @@ function WTUA_Building_InitialReviewCoordination() { // From Standard Choice: Wo
 function sendNotificationContact() {
 	var emailTemplate = (arguments.length > 0 && arguments[0] ? arguments[0] : "");
 	var emailParameters = (arguments.length > 1 && arguments[1] ? arguments[1] : aa.util.newHashtable());
-	var contactTypesTo = (arguments.length > 2 && arguments[2] ? arguments[1] : ["Applicant"]);
+	var contactTypes = (arguments.length > 2 && arguments[2] ? arguments[1] : ["Applicant"]);
 	var emailStaffCC = (arguments.length > 3 && arguments[3] ? arguments[3] : "");
 	logDebug("sendNotificationContact");
 	// From Standard Choice: WorkflowTaskUpdateAfter:Building:AutomatedNotifications
